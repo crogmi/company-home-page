@@ -21,7 +21,7 @@
             </ul>
           </nav>
         </div>
-        <div class="container" id="banner">
+        <div class="banner-container" id="banner">
           <div id="banner-box">
             <h2 class="banner-title" id="motto">Moments That Matter</h2>
             <h4 class="banner-desc" id="location">Los Angeles and San Bernardino, CA</h4>
@@ -32,10 +32,19 @@
       <main>
         <div class="container" id="main-container">
           <section id="bio">
-            <p>Welcome!</p>
-            <p>My name is Megan Won, a natural light portrait photographer serving the Los Angeles and San Bernardino regions, specialized in engagements, weddings, and family.</p>
-            <p>Take a look around my site, view the galleries and send me a note if you're interested in learning more!</p>
-            <a href="#"><button>Send an inquiry</button></a>
+            <!-- Replace box with an image -->
+            <div class="bio-container" id="bio-image">Insert Image</div>
+            <div class="bio-container" id="bio-text">
+              <div class="bio-box">
+                <p>Welcome!</p>
+                <hr>
+                <p>My name is Megan Won, a natural light portrait photographer serving the Los Angeles and San Bernardino regions, specialized in engagements, weddings, and family.</p>
+                <br>
+                <p>Take a look around my site, view the galleries and send me a note if you're interested in learning more!</p>
+                <br>
+                <a href="#"><button>Send an inquiry</button></a>
+              </div>
+            </div>
           </section>
           <section id="gallery">
             <!-- Show two images at a time that cycle -->
@@ -47,19 +56,20 @@
             <!-- Contact button -->
           </section>
           <section id="reviews">
-            <div id="review-1">We were so happy with our photos! We received so many compliments by people blown away from our photos! megan was so easy to work with. Our daughters felt comfortable too and they aren't used to getting photos taken.</div>
+            <div class="review-container">
+              <div id="review-1">"We were so happy with our photos! We received so many compliments by people blown away from our photos! megan was so easy to work with. Our daughters felt comfortable too and they aren't used to getting photos taken."</div>
+            </div> 
           </section>
         </div>
       </main>
       <footer>
-        <div class="container" id="footer-container">
-          <!-- Insert instagram symbol that links to instagram page-->
+        <div class="footer-box">  
           <a href="https://www.instagram.com/meganwonphoto/" target="_blank"><img src="img/Social media/instagram-icon.jpg" alt="" class="social-media-icon" id="instagram-icon"></a>
           <!-- Link to contact page to send an iquiry -->
           <p id="contact-email"><a href="mailto: megwon.photo@gmail.com">megwon.photo@gmail.com</a></p>
-          <!-- Image or logo centered in the footer-->
-          <p id="location-footer">Los Angeles, CA</p>
         </div>
+        <!-- Image or logo centered in the footer-->
+        <p id="location-footer">Los Angeles, CA</p>
       </footer>
     </div>
   </body>
