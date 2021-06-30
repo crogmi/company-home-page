@@ -1,7 +1,52 @@
+/* Color */
+:root {
+    --main-beige: #E3E0CF;
+    --main-green: #C5D5CB;
+    --main-dark-green: #9FA8A3;
+    --main-brown: #C2B490;
+    --main-white: #F5F5F5;
+    --main-grey: #DCDCDC;
+}
+
+/* General styling */
+
 html {
     box-sizing: border-box;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+/* Header and navbar */
+
+#head-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    
+}
+
+.social-media-icon {
+    width: 30px;
 }
