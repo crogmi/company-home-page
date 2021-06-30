@@ -18,21 +18,61 @@ html {
     box-sizing: inherit;
 }
 
+#site-container {
+    display: grid;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "header"
+                "nav"
+                "banner"
+                "bio"
+                "gallery"
+                "products"
+                "reviews"
+                "footer";
+    grid-template: repeat(8, 1fr) / repeat(0, 1fr);
+}
+
 /* Header and navbar */
 
-#head-container {
-    width: 100%;
-    display: grid;
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.site-title {
+    text-align: center;
+}
+
+#short-title {
+    display: none;
+}
+
+nav {
+    display: flex;
     justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
 }
 
 #navbar {
     display: flex;
     justify-content: space-around;
+    max-width: 50%;
+    flex: 1;
     margin: 0;
     padding: 0;
+    text-align: center;
+    position: relative;
+    flex-flow: row wrap;
+}
+
+nav ul {
     list-style-type: none;
-    text-decoration: none;
 }
 
 .nav-links a {
@@ -40,11 +80,58 @@ html {
     text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    #navbar {
+        flex-wrap: nowrap;
+        flex: 0 0 auto;
+    }
+    .nav-links {
+        padding: 0 10%
+    }
+}
+
+@media screen and (max-width: 368px) {
+    #long-title { display: none; }
+    #short-title {display: block; }
+    #navbar {
+        max-width: 100%;
+    }
+    .nav-links {
+        padding: 0 3%
+    }
+}
+
+/* Banner */
+#banner {
+    grid-area: banner;
+}
+
+/* Bio */
+#bio {
+    grid-area: bio;
+}
+
+/* Gallery */
+#gallery {
+    grid-area: gallery;
+}
+
+/* Products */
+#products {
+    grid-area: products;
+}
+
+/* Reviews */
+#reviews {
+    grid-area: reviews;
+}
+
+
 
 /* Footer */
 
 footer {
-    
+    grid-area: footer;
 }
 
 .social-media-icon {
