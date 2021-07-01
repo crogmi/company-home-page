@@ -200,7 +200,7 @@ nav ul {
     background-color: var(--main-off-white);
     text-align: center;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -227,6 +227,30 @@ nav ul {
 /* Gallery */
 #gallery {
     grid-area: gallery;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(0, 1fr);
+}
+
+.gallery-box {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+    width: 50%;
+    text-align: center;
+}
+
+#gallery a {
+    text-decoration: none;
+    text-align: center;
+    padding: 2rem 0;
 }
 
 /* Products */
@@ -275,12 +299,22 @@ footer {
 
 .footer-box {
     text-align: left;
-    width: 50%;
+    width: calc(1/3*100%);
     margin-left: 2%;
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-logo {
+    text-align: center;
+    width: calc(1/3*100%);
+}
+
 #location-footer {
-    width: 50%;
+    width: calc(1/3*100%);
     text-align: right;
     margin-right: 2%;
 }
